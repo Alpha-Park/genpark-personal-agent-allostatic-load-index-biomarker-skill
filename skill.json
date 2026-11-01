@@ -1,0 +1,23 @@
+{
+  "name": "genpark-personal-agent-allostatic-load-index-biomarker-skill",
+  "version": "1.0.0",
+  "description": "Calculates Bruce McEwen allostatic load index across cardiovascular, metabolic, inflammatory, and neuroendocrine systems, and models physiological recovery.",
+  "tools": [
+    {
+      "name": "calculate_allostatic_load_index",
+      "description": "Calculates allostatic load index (0-10) across cardiovascular, metabolic, inflammatory, and autonomic markers.",
+      "parameters": {
+        "biomarkers_json": "string (JSON object of biomarker values)",
+        "gender": "string (optional, default 'male')"
+      }
+    },
+    {
+      "name": "simulate_allostatic_recovery_trajectory",
+      "description": "Simulates multi-week allostatic load attenuation trajectory under lifestyle interventions.",
+      "parameters": {
+        "current_al_index": "float (default 6.0)",
+        "adherence_weeks": "int (default 12)"
+      }
+    }
+  ]
+}
